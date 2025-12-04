@@ -18,7 +18,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
+
         <!-- Dependencies versions -->
         <lombok.version>1.18.30</lombok.version>
         <jakarta.validation.version>3.0.2</jakarta.validation.version>

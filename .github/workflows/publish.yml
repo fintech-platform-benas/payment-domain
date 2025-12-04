@@ -23,6 +23,9 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: "maven"
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
 
       - name: Build with Maven
         run: mvn clean package -B
@@ -33,7 +36,8 @@ jobs:
       - name: Publish to GitHub Packages
         run: mvn deploy -DskipTests
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.MAVEN_TOKEN }}
 
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
