@@ -2,8 +2,8 @@
 
 [![CI Build](https://github.com/fintech-platform-benas/payment-domain/actions/workflows/ci.yml/badge.svg)](https://github.com/fintech-platform-benas/payment-domain/actions/workflows/ci.yml)
 [![Publish](https://github.com/fintech-platform-benas/payment-domain/actions/workflows/publish.yml/badge.svg)](https://github.com/fintech-platform-benas/payment-domain/actions/workflows/publish.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=payment-domain&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=payment-domain)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=payment-domain&metric=coverage)](https://sonarcloud.io/summary/new_code?id=payment-domain)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fintech-platform-benas_payment-domain&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=fintech-platform-benas_payment-domain)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=fintech-platform-benas_payment-domain&metric=coverage)](https://sonarcloud.io/summary/new_code?id=fintech-platform-benas_payment-domain)
 
 Shared domain models and value objects for PaymentChain platform.
 
