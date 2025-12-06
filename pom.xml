@@ -22,6 +22,15 @@
         <!-- Dependencies versions -->
         <lombok.version>1.18.30</lombok.version>
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
+
+        <!-- SonarCloud configuration -->
+        <sonar.organization>fintech-platform-benas</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.java.source>${maven.compiler.source}</sonar.java.source>
+        <sonar.java.target>${maven.compiler.target}</sonar.java.target>
+        <sonar.sourceEncoding>${project.build.sourceEncoding}</sonar.sourceEncoding>
+        <sonar.sources>src/main/java</sonar.sources>
+        <sonar.tests>src/test/java</sonar.tests>
     </properties>
 
     <dependencies>

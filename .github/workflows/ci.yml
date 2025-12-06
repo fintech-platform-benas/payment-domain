@@ -72,4 +72,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn verify sonar:sonar -Dsonar.branch.name=main
+        run: |
+          mvn verify sonar:sonar \
+            -Dsonar.projectKey=fintech-platform-benas_payment-domain \
+            -Dsonar.java.binaries=target/classes \
+            -Dsonar.java.test.binaries=target/test-classes \
+            -Dsonar.junit.reportsPath=target/surefire-reports \
+            -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
