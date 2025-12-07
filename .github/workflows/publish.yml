@@ -3,7 +3,6 @@ name: Publish to GitHub Packages
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   publish:
@@ -23,7 +22,7 @@ jobs:
           distribution: "temurin"
           cache: "maven"
 
-      - name: Build and Publish
+      - name: Publish to GitHub Packages
         run: mvn -B clean deploy
         env:
-          MAVEN_TOKEN: ${{ secrets.MAVEN_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
