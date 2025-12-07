@@ -26,4 +26,4 @@ jobs:
       - name: Build and Publish
         run: mvn -B clean deploy
         env:
-          MAVEN_TOKEN: ${{ secrets.MAVEN_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
